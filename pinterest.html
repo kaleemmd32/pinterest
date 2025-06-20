@@ -43,6 +43,29 @@
     .content {
       padding-top: 100px;
       padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .main-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .main-image {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .main-text {
+      max-width: 500px;
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
 
     .bottom-left {
@@ -56,6 +79,17 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       font-size: 0.95rem;
     }
+
+    @media (max-width: 768px) {
+      .main-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .main-text {
+        padding: 0 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -64,13 +98,26 @@
     <div class="logo">ClassQ</div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="https://raw.githack.com/kaleemmd32/pinterest/refs/heads/main/pinterestp.html">Privacy Policy</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <div class="content">
-    <!-- Add main page content here -->
+    <section class="main-section">
+      <!-- Replace the src with your preferred image -->
+      <img src="https://unsplash.com/photos/a-pair-of-headphones-sitting-on-top-of-each-other-A6hzRnwR3vM" />
+      
+      <div class="main-text">
+        <h2>Welcome to ClassQ</h2>
+        <p>
+          Discover the top-selling products from Amazon all in one place. ClassQ helps you find what’s hot and trending fast — saving you time and helping you buy smarter.
+        </p>
+        <p>
+          With curated affiliate links and up-to-date insights, ClassQ is your shortcut to smarter online shopping.
+        </p>
+      </div>
+    </section>
   </div>
 
   <div class="bottom-left">
