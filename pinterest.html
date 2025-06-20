@@ -134,22 +134,7 @@
     <button onclick="closePopups()">Close</button>
   </div>
 
-  <script>
-    function openPopup(type) {
-      document.getElementById('overlay').style.display = 'block';
-      if (type === 'privacy') {
-        document.getElementById('privacyPopup').style.display = 'block';
-      } else if (type === 'contact') {
-        document.getElementById('contactPopup').style.display = 'block';
-      }
-    }
 
-    function closePopups() {
-      document.getElementById('overlay').style.display = 'none';
-      document.getElementById('privacyPopup').style.display = 'none';
-      document.getElementById('contactPopup').style.display = 'none';
-    }
-  </script>
 
 </body>
 </html>
